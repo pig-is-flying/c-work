@@ -19,9 +19,9 @@ void if_file_exist()
     fp = fopen("STUDENT MANAGEMENT SYSTEM DATA.txt", "r+");
     if (fp == NULL)
     {
-        gotoxy(85, 26);
+        gotoxy(85, 34);
         printf("Open file fail,create new file?");
-        gotoxy(85, 27);
+        gotoxy(85, 35);
         printf("Y/N?");
         char c;
         while (1)
@@ -30,7 +30,7 @@ void if_file_exist()
             if (c == 'Y' || c == 'y')
             {
                 printf("Y");
-                gotoxy(85, 28);
+                gotoxy(85, 36);
                 fp = fopen("STUDENT MANAGEMENT SYSTEM DATA.txt", "w+");
                 if (fp != NULL)
                 {
@@ -45,7 +45,7 @@ void if_file_exist()
             else if (c == 'N' || c == 'n')
             {
                 printf("N");
-                gotoxy(85, 28);
+                gotoxy(85, 36);
                 printf("Successfully quit.");
                 return;
             }
